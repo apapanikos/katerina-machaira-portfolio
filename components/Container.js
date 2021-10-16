@@ -15,7 +15,7 @@ const Container = ({ children, ...customMeta }) => {
     ...customMeta,
   };
   return (
-    <div>
+    <div className="page-container">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
