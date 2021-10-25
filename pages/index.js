@@ -5,12 +5,5 @@ import Hero from '../components/Hero'
 import Container from '../components/Container'
 
 export default function Home() {
-  return (
-  <Container
-    title="Katerina Machaira - UI/UX Designeer & Content Creator"
-    description="Desc"
-  >
-    <Hero />
-  </Container>
-  )
+  return (<div></div>)
 }
