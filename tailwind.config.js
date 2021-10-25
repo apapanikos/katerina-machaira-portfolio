@@ -11,6 +11,14 @@ module.exports = {
         4000: "4000ms",
       },
     },
+    letterSpacing: {
+      tightest: '-0.075em',
+      tighter: '-0.05em',
+      notmal: '0em',
+      wide: '0.025em',
+      wider: '0.05em',
+      widest: '0.25em'
+    }
   },
   variants: {
     extend: {},
