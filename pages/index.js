@@ -3,9 +3,12 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Sidebar from '../components/Sidebar'
 import Layout from '../components/Layout'
+import Hero from '../components/Hero'
 
 export default function Index() {
-  return (<div></div>)
+  return (
+    <Hero />
+  )
 }
 
 Index.getLayout = function getLayout(page) {

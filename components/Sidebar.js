@@ -3,9 +3,9 @@ import styles from '../styles/Sidebar.module.css'
 
 export default function Sidebar() {
   return (
-    <nav className={styles.nav}>
+    <aside className={styles.nav}>
       <Link href="/">
-        <a> 
+        <a className="mb-3"> 
           <h1 className="tracking-widest font-extrabold text-base">kat.</h1>
         </a>
       </Link>
@@ -21,6 +21,7 @@ export default function Sidebar() {
       <Link href="/contact">
         <a>Contact</a>
       </Link>
-    </nav>
+
+    </aside>
   )
 }
