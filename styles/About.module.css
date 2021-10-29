@@ -1,0 +1,14 @@
+.container {
+  padding-left: 12rem;
+}
+
+.left, .right {
+  width: 50%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
