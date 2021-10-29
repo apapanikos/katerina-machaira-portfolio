@@ -4,10 +4,14 @@ import styles from '../styles/Home.module.css'
 import Sidebar from '../components/Sidebar'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
+import About from '../components/About'
 
 export default function Index() {
   return (
+    <>
     <Hero />
+    <About />
+    </>
   )
 }
 
