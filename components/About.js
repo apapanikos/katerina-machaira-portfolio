@@ -21,7 +21,7 @@ const About = () => {
     <div className={styles.container}>
       <div className={styles.left}>
         <p>{about}</p>
-        <a href={resume} without rel="noopener noreferrer" target="_blank" className={styles.resumeBtn}>View my resume</a>
+        <a href={resume} rel="noopener noreferrer" target="_blank" className={styles.resumeBtn}>View my resume</a>
         <ul className={styles.icons}>
           {socialIcons.map((icon, index) => {
             return <li key={index}>

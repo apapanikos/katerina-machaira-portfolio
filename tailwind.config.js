@@ -20,10 +20,10 @@ module.exports = {
       widest: '0.5em'
     }
   },
+  important: true,
   variants: {
     extend: {},
     display: ["responsive", "group-hover", "group-focus"],
   },
-
   plugins: [],
 }
