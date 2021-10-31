@@ -1,5 +1,8 @@
 import Link from 'next/link'
+import React, { useEffect, useState } from "react"
 import styles from '../styles/Sidebar.module.css'
+// Import react scroll
+import { Link as LinkScroll } from "react-scroll";
 import { navLinks } from "../utils/data";
 
 const LinkItem = (props) => {
@@ -25,8 +28,29 @@ const LinksList = (props) => {
 }
 
 const Sidebar = () => {
+  const [isVisible, setIsVisible] = useState(true)
+  const [activeLink, setActiveLink] = useState(null);
+
+  useEffect(() => {   
+    window.addEventListener("scroll", listenToScroll)
+    return () => 
+      window.removeEventListener("scroll", listenToScroll)
+  }, [])
+
+  const listenToScroll = () => {
+    let heightToHideFrom = 200
+    let heightToShow = 500
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+       
+    if (winScroll > heightToHideFrom && winScroll < heightToShow) { 
+       isVisible &&      // to limit setting state only the first time         
+         setIsVisible(false)
+    } else {
+         setIsVisible(true)
+    }  
+  }
   return (
-    <aside className={styles.nav}>
+    <aside style={{opacity: isVisible ? '1' : '0'}} className={styles.nav}>
       <LinksList navLinks={navLinks} />
     </aside>
   )

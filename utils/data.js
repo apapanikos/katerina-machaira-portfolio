@@ -1,7 +1,7 @@
 export const navLinks = [
   { 
     name: "kat.", 
-    path: "/" ,
+    path: "#home" ,
     parentClass: 'mb-3',
     class: 'tracking-widest font-extrabold text-base'
   },

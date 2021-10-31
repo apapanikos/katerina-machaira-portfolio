@@ -18,7 +18,7 @@ const about = 'Hello my name is Katerina Machaira and I am a passionate entry le
 
 const About = () => {
   return (
-    <div className={styles.container}>
+    <section id="about" className={styles.container}>
       <div className={styles.left}>
         <p>{about}</p>
         <a href={resume} rel="noopener noreferrer" target="_blank" className={styles.resumeBtn}>View my resume</a>
@@ -41,7 +41,7 @@ const About = () => {
            </h3>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

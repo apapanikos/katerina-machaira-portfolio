@@ -2,7 +2,7 @@ import styles from '../styles/Hero.module.css'
 
 const Hero = () => {
   return (
-    <div className={styles.container}>
+    <section id="home" className={styles.container}>
       <div className={styles.left}>
         <div className={styles.leftContent}>
           <h1>UI/UX</h1>
@@ -21,7 +21,7 @@ const Hero = () => {
           <h3>I am a Ui/Ux Designer</h3>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
