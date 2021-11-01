@@ -1,13 +1,18 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from "react"
 import styles from '../styles/Sidebar.module.css'
-// Import react scroll
-import { Link as LinkScroll } from "react-scroll";
 import { navLinks } from "../utils/data";
+import { useRouter } from 'next/router';
+import clsx from "classnames";
 
 const LinkItem = (props) => {
+  const router = useRouter()
+  const liStyle = clsx({
+    [styles['nav-item']]: true,
+    [styles['nav-item--active']]: router.asPath == `/${props.value.path}`
+  })
   return (
-    <li className={props.value.parentClass}>
+    <li className={liStyle}>
       <Link href={props.value.path}>
         <a className={props.value.class}>
           {props.value.name}
@@ -29,7 +34,6 @@ const LinksList = (props) => {
 
 const Sidebar = () => {
   const [isVisible, setIsVisible] = useState(true)
-  const [activeLink, setActiveLink] = useState(null);
 
   useEffect(() => {   
     window.addEventListener("scroll", listenToScroll)

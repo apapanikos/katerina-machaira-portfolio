@@ -11,8 +11,40 @@
   transition: all .3s ease-in-out;
 }
 
-.nav a {
+.nav-item {
+  position: relative;
+}
+
+.nav-item:first-child {margin-bottom: .75rem;}
+.nav-item:not(:first-child) {margin-bottom: .2rem;}
+
+.nav-item a {
   font-size: 13px;
   font-weight: 500;
   padding: .125rem;
+}
+
+.nav-item--active:not(:first-child):after {
+  width: 100% !important;
+}
+
+.nav-item:after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: black;
+  transition: all .3s ease-in;
+  border-radius: .125rem;
+}
+
+.nav-item:not(:first-child):hover:after {
+  width: 100%;
+}
+
+.nav-item:not(:hover):after {
+  right: 0;
+  left: auto;
 }
