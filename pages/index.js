@@ -6,12 +6,14 @@ import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import { fetchAPI } from '../lib/api'
+import Projects from '../components/Projects'
 
 export default function Index({ projects }) {
   return (
     <>
     <Hero />
     <About />
+    <Projects projects = {projects} />
     </>
   )
 }
@@ -28,6 +30,8 @@ Index.getLayout = function getLayout(page) {
 export async function getStaticProps() {
   // get projects from api using the helper function
   const projects = fetchAPI('/projects');
+
+  console.log(projects)
 
   return {
     props: { projects },
