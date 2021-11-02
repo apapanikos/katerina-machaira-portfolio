@@ -31,8 +31,6 @@ export async function getStaticProps() {
   // get projects from api using the helper function
   const projects = fetchAPI('/projects');
 
-  console.log(projects)
-
   return {
     props: { projects },
   }
