@@ -20,9 +20,8 @@ export async function getStaticPaths() {
 
 // for each individual page: get the data for that page
 export async function getStaticProps({ params }) {
-  const { slug } = params
   const projects = await fetchAPI(
-    `/projects?slug=${slug}`
+    `/projects?slug=${params.slug}`
   );
   const project = projects[0]
 

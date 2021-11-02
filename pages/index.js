@@ -12,11 +12,6 @@ export default function Index({ projects }) {
     <>
     <Hero />
     <About />
-    {projects && projects.map((project) => (
-      <div key={project.id}>
-        <h1>{project.title}</h1>
-      </div>
-    ))}
     </>
   )
 }
@@ -36,6 +31,5 @@ export async function getStaticProps() {
 
   return {
     props: { projects },
-    revalidate: 10
   }
 }
