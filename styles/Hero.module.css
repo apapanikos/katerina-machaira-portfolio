@@ -59,7 +59,7 @@
 
 .right .subtitle {
   position: absolute;
-  border-right: 1px solid black;
+  border-right: 2px solid black;
   right: 10vw;
   top: 0;
   writing-mode: vertical-lr;
