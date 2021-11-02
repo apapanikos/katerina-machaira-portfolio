@@ -12,7 +12,7 @@ const Projects = ({ projects }) => {
     <section id="projects" className={styles.container}>
       <h1>Projects</h1>
       <ul className={styles['projects-list']}>
-        {MOCK_PROJECTS.map((project) => <ProjectCard key={project.id} project={project} />)}
+        {MOCK_PROJECTS.map((project, index) => <ProjectCard key={project.id} project={project} index={index}/>)}
       </ul>
     </section>
   )

@@ -1,21 +1,139 @@
 .container {
-  padding: 4rem 2rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   display: flex;
-  width: calc(100% - 4rem);
+  width: calc(100% - 2rem);
 }
 
 .container:nth-child(even) {
+  padding-left: 2rem;
   flex-direction: row-reverse;
 }
 
 .container:nth-child(odd) {
+  padding-right: 2rem;
   flex-direction: row;
 }
 
 .left {
   background-color: #E8E8E8;
-  width: 37.5rem;
+  width: 70%;  /* 37.5rem original */
   height: 25rem;
+  position: relative;
 }
 
-.right {}
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding-top: 2rem;
+  position: relative;
+}
+
+/* Construct upper dotted border for odd project  */
+.container .left:before {
+  content: ' ';
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  top: -10%;
+  right: 30%;
+  background-color: #000000;
+}
+
+/* Construct upper dotted border for even project  */
+.container .left:before {
+  content: ' ';
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  top: -10%;
+  left: 30%;
+  background-color: #000000;
+}
+
+ /* Construct custom corner radius for odd projects */
+.container:nth-child(odd) .right:before {
+  content: ' ';
+  position: absolute;
+  width: 30%;
+  height: 2px;
+  top: -10%;
+  right: -10%;
+  background-color: #000000;
+}
+
+.container:nth-child(odd) .right:after{
+  content: ' ';
+  position: absolute;
+  width: 2px;
+  height: 20%;
+  top: -10%;
+  right: -10%;
+  background-color: #000000;
+}
+
+/* Construct custom corner radius for event projects */
+.container:nth-child(even) .right:before {
+  content: ' ';
+  position: absolute;
+  width: 30%;
+  height: 2px;
+  top: -10%;
+  left: -10%;
+  background-color: #000000;
+}
+
+.container:nth-child(even) .right:after{
+  content: ' ';
+  position: absolute;
+  width: 2px;
+  height: 20%;
+  top: -10%;
+  left: -10%;
+  background-color: #000000;
+}
+
+.container:nth-child(even) .right {
+  align-items: flex-start;
+}
+
+.container:nth-child(odd) .right {
+  align-items: flex-end;
+}
+
+.container:nth-child(odd) .right .project-desc {
+  text-align: right;
+}
+
+.project-title {
+  font-size: 6.25rem;
+  line-height: 7rem;
+  letter-spacing: 1.25rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.project-desc {
+  font-size: 1.375rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.link-btn {
+  font-size: .975rem;
+  font-weight: 600;
+  color: rgba(255, 48, 2, .81);
+  text-decoration: underline;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.project-index {
+  font-size: 6.25rem;
+  line-height: 7rem;
+  letter-spacing: -.05rem;
+  font-weight: 900;
+  color: rgba(255, 48, 2, .81);
+  margin-top: auto;
+}
