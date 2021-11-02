@@ -1,0 +1,21 @@
+.container {
+  padding: 4rem 2rem;
+  display: flex;
+  width: calc(100% - 4rem);
+}
+
+.container:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.container:nth-child(odd) {
+  flex-direction: row;
+}
+
+.left {
+  background-color: #E8E8E8;
+  width: 37.5rem;
+  height: 25rem;
+}
+
+.right {}
