@@ -1,15 +1,7 @@
 import React from 'react'
 import styles from '../styles/About.module.css'
 import Image from 'next/image'
-import behanceIcon from '../public/social/behance.svg'
-import facebookIcon from '../public/social/facebook.svg'
-import linkedinIcon from '../public/social/linkedin.svg'
-
-const socialIcons = [
-  {source: behanceIcon, alt: 'behance'},
-  {source: facebookIcon, alt: 'facebook'},
-  {source: linkedinIcon, alt: 'linkedin'},
-]
+import { socialIcons } from '../utils/data'
 
 // TODO import pdf file
 const resume = ''

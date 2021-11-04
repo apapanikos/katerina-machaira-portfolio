@@ -1,3 +1,7 @@
+import behanceIcon from '../public/social/behance.svg'
+import facebookIcon from '../public/social/facebook.svg'
+import linkedinIcon from '../public/social/linkedin.svg'
+
 export const navLinks = [
   { 
     name: "kat.", 
@@ -29,4 +33,10 @@ export const navLinks = [
     parentClass: 'nav-item',
     class: ''
   },
+]
+
+export const socialIcons = [
+  {source: behanceIcon, alt: 'behance'},
+  {source: facebookIcon, alt: 'facebook'},
+  {source: linkedinIcon, alt: 'linkedin'},
 ]
