@@ -47,7 +47,7 @@
 }
 
 .contact-info__left__box {
-  border: 1px solid rgba(255, 48, 2, .81);
+  border: 2px solid rgba(255, 48, 2, .81);
   padding: 2rem;
   display: flex;
   align-items: flex-start;
@@ -75,7 +75,17 @@
   line-height: 1.75rem;
   font-weight: 800;
   padding-bottom: 1rem;
-  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.contact-info__left__box__content__title:after {
+  content: " ";
+  position: absolute;
+  width: 130%;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background-color: #000;
 }
 
 .contact-info__left__box__content__email {
@@ -96,7 +106,17 @@
   line-height: 1.75rem;
   font-weight: 700;
   padding-bottom: 1rem;
-  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.contact-info__left__box__content__social span:after {
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 200%;
+  background-color: #000;
 }
 
 .contact-info__left__box__content__social__icons {
