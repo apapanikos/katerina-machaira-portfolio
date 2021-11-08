@@ -29,11 +29,11 @@ Index.getLayout = function getLayout(page) {
   )
 }
 
-// export async function getStaticProps() {
-//   // get projects from api using the helper function
-//   const projects = fetchAPI('/projects');
+export async function getStaticProps() {
+  const res = await fetch("http://localhost:1337/projects");
+  const projects = await res.json();
 
-//   return {
-//     props: { projects },
-//   }
-// }
+  return {
+    props: { projects },
+  };
+}

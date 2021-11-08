@@ -15,7 +15,7 @@ const About = () => {
         <p>{about}</p>
         <a href={resume} rel="noopener noreferrer" target="_blank" className={styles.resumeBtn}>View my resume</a>
         <ul className={styles.icons}>
-          {socialIcons.map((icon, index) => {
+          {socialIcons && socialIcons.map((icon, index) => {
             return <li key={index}>
               <Image src={icon.source} alt={icon.alt} width='30px' height='30px'/>
             </li>

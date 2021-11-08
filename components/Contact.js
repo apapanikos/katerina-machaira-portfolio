@@ -18,7 +18,7 @@ const Contact = () => {
               <div className={styles['contact-info__left__box__content__social']}>
                 <span>Social</span>
                 <ul className={styles['contact-info__left__box__content__social__icons']}>
-                  {socialIcons.map((icon, index) => 
+                  {socialIcons && socialIcons.map((icon, index) => 
                     <li key={index}>
                       <Image src={icon.source} alt={icon.alt} width='30px' height='30px'/>
                     </li>
