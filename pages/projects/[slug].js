@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Layout from '../../components/Layout'
 import ProjectDetails from "../../components/ProjectDetails"
 import ProjectResearch from "../../components/ProjectResearch"
+import ProjectPersona from "../../components/ProjectPersona"
 
 
 export default function Project({ project }) {
@@ -21,6 +22,7 @@ export default function Project({ project }) {
       </div>
       <ProjectDetails project = {project} />
       <ProjectResearch project = {project} />
+      <ProjectPersona project = {project} />
     </div>
   )
 }

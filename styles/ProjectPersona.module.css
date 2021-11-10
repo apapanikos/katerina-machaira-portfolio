@@ -1,0 +1,29 @@
+.project-persona {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #E8E8E8;
+}
+
+.project-persona__content {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.project-persona__content h1 {
+  text-align: right;
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: -.03rem;
+  transform: translateY(-4rem);
+}
+
+.project-persona__content__intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-persona__content__intro p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
