@@ -1,6 +1,7 @@
 import { fetchAPI } from "../../lib/api";
 import Link from 'next/link'
 import Layout from '../../components/Layout'
+import ProjectDetails from "../../components/ProjectDetails"
 
 
 export default function Project({ project }) {
@@ -17,6 +18,7 @@ export default function Project({ project }) {
         <h1 className="text-7xl font-extrabold">{project.title}</h1>
         <div></div>
       </div>
+      <ProjectDetails project = {project} />
     </div>
   )
 }

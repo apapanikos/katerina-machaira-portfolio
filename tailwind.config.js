@@ -18,7 +18,7 @@ module.exports = {
       wide: '0.05em',
       wider: '0.25em',
       widest: '0.5em'
-    }
+    },
   },
   important: true,
   variants: {
