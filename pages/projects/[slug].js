@@ -2,6 +2,7 @@ import { fetchAPI } from "../../lib/api";
 import Link from 'next/link'
 import Layout from '../../components/Layout'
 import ProjectDetails from "../../components/ProjectDetails"
+import ProjectResearch from "../../components/ProjectResearch"
 
 
 export default function Project({ project }) {
@@ -19,6 +20,7 @@ export default function Project({ project }) {
         <div></div>
       </div>
       <ProjectDetails project = {project} />
+      <ProjectResearch project = {project} />
     </div>
   )
 }
