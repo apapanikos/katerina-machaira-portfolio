@@ -1,6 +1,8 @@
 .project-persona {
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
   background-color: #E8E8E8;
 }
 
@@ -14,7 +16,8 @@
   font-size: 5rem;
   font-weight: 800;
   letter-spacing: -.03rem;
-  transform: translateY(-4rem);
+  margin-top: -10rem;
+  margin-bottom: 4rem;
 }
 
 .project-persona__content__intro {
@@ -26,4 +29,48 @@
 .project-persona__content__intro p {
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.project-persona__content__name {
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-persona__content__age {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-persona__content__edu {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-persona__content__family {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-persona__content__goals, .project-persona__content__frustrations {
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-persona__content__goals {
+  color: #537E48;
+}
+
+.project-persona__content__frustrations {
+  color: #B63D3D;
+}
+
+.project-persona p {
+  font-weight: 800;
+  font-size: 1.25rem;
+  max-width: 75%;
 }
