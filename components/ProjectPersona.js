@@ -10,7 +10,7 @@ const ProjectPersona = ({ project }) => {
       <div className={styles['project-persona__content']}>
         <h1>Persona</h1>
         <div className={styles['project-persona__content__intro']}>
-          {/* <Image src={getStrapiMedia(persona?.avatar)} alt={persona.avatar.name} width={persona.avatar.width} height={persona.avatar.height}/> */}
+          <Image src={getStrapiMedia(persona?.avatar)} alt={persona.avatar.name} width={persona.avatar.width} height={persona.avatar.height}/>
           <p>"{persona.desc}"</p>
         </div>
         <div className = 'row mt-12'>
@@ -28,11 +28,11 @@ const ProjectPersona = ({ project }) => {
           </div>
           <div className="col">
             <h5 className={styles['project-persona__content__goals']}>Goals</h5>
-            <p dangerouslySetInnerHTML={{ __html: persona.goals}}></p>
+            <p className="text-xl font-extrabold w-3/4" dangerouslySetInnerHTML={{ __html: persona.goals}}></p>
           </div>
           <div className="col">
             <h5 className={styles['project-persona__content__frustrations']}>Frustrations</h5>
-            <p dangerouslySetInnerHTML={{ __html: persona.frustrations}}></p>
+            <p className="text-xl font-extrabold w-3/4" dangerouslySetInnerHTML={{ __html: persona.frustrations}}></p>
           </div>
         </div>
       </div>

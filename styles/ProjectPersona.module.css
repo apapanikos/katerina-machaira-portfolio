@@ -29,6 +29,7 @@
 .project-persona__content__intro p {
   font-size: 1.5rem;
   font-weight: 600;
+  max-width: 75%;
 }
 
 .project-persona__content__name {
@@ -67,10 +68,4 @@
 
 .project-persona__content__frustrations {
   color: #B63D3D;
-}
-
-.project-persona p {
-  font-weight: 800;
-  font-size: 1.25rem;
-  max-width: 75%;
 }
