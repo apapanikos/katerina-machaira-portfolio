@@ -7,6 +7,7 @@ import ProjectPersona from "../../components/ProjectPersona"
 import ProjectIdeation from "../../components/ProjectIdeation"
 import ProjectWireframes from "../../components/ProjectWireframes";
 import ProjectLfPrototypes from "../../components/ProjectLfPrototypes";
+import ProjectUsabilityStudy from "../../components/ProjectUsabilityStudy";
 
 export default function Project({ project }) {
   return (
@@ -28,6 +29,7 @@ export default function Project({ project }) {
       <ProjectIdeation project = {project} />
       <ProjectWireframes project = {project} />
       <ProjectLfPrototypes project = {project}/>
+      <ProjectUsabilityStudy project = {project}/>
     </div>
   )
 }
