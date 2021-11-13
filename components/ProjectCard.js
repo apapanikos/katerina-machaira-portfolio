@@ -11,7 +11,7 @@ const ProjectCard = ({ project, index }) => {
       <div className={styles.right}>
         <h2 className={styles['project-title']}>{project.title}</h2>
         <h4 className={styles['project-desc']}>{project.description}</h4>
-        <Link href={`projects/${project.slug}`} key={project.id}>
+        <Link href={`/projects/${project.slug}`} key={project.id}>
           <a className={styles['link-btn']}>View case study</a>
         </Link>
         <h2 className={styles['project-index']}>0{index + 1}.</h2>
