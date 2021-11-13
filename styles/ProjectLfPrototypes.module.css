@@ -1,0 +1,26 @@
+.project-lf-prototypes {
+  border: 2px solid rgba(255, 48, 2, 0.81);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 12rem;
+}
+
+.project-lf-prototypes__content {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.project-lf-prototypes__content h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: -.03rem;
+  margin-top: -4rem;
+  margin-bottom: 4rem;
+}
+
+.project-lf-prototypes__content p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
+}

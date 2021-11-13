@@ -6,6 +6,7 @@ import ProjectResearch from "../../components/ProjectResearch"
 import ProjectPersona from "../../components/ProjectPersona"
 import ProjectIdeation from "../../components/ProjectIdeation"
 import ProjectWireframes from "../../components/ProjectWireframes";
+import ProjectLfPrototypes from "../../components/ProjectLfPrototypes";
 
 export default function Project({ project }) {
   return (
@@ -26,6 +27,7 @@ export default function Project({ project }) {
       <ProjectPersona project = {project} />
       <ProjectIdeation project = {project} />
       <ProjectWireframes project = {project} />
+      <ProjectLfPrototypes project = {project}/>
     </div>
   )
 }
