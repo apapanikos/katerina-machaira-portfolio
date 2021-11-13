@@ -9,6 +9,7 @@ import ProjectWireframes from "../../components/ProjectWireframes";
 import ProjectLfPrototypes from "../../components/ProjectLfPrototypes";
 import ProjectUsabilityStudy from "../../components/ProjectUsabilityStudy";
 import ProjectMockups from "../../components/ProjectMockups";
+import ProjectHfPrototypes from "../../components/ProjectHfPrototypes";
 
 export default function Project({ project }) {
   return (
@@ -32,6 +33,7 @@ export default function Project({ project }) {
       <ProjectLfPrototypes project = {project}/>
       <ProjectUsabilityStudy project = {project}/>
       <ProjectMockups project = {project}/>
+      <ProjectHfPrototypes project = {project}/>
     </div>
   )
 }
