@@ -1,7 +1,5 @@
 import React from 'react'
 import styles from '../styles/ProjectUsabilityStudy.module.css'
-import Image from 'next/image'
-import { getStrapiMedia } from '../lib/media'
 
 const ProjectUsabilityStudy = ({ project }) => {
   const usabilityStudy = project?.usability_study
