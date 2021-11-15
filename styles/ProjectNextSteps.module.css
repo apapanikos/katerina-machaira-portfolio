@@ -1,0 +1,65 @@
+.project-next-steps {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 8rem;
+  padding-top: 6rem;
+  margin-bottom: 6rem;
+  background-color: #E8E8E8;
+}
+
+
+.project-next-steps__content {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.project-next-steps__content h1 {
+  text-align: right;
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: -.03rem;
+  margin-top: -10rem;
+  margin-bottom: 4rem;
+}
+
+.project-next-steps__content__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-next-steps__content__list__step {
+  width: calc(50% - 8rem);
+  max-width: calc(50% - 8rem);
+  padding: 4rem;
+}
+
+.project-next-steps__content__list__step:first-child {
+  border: 3px solid rgba(255, 48, 2, 0.81);
+}
+
+.project-next-steps__content__list__step__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.project-next-steps__content__list__step__row span {
+  font-weight: 800;
+  font-size: 3.75rem;
+  line-height: 4.25rem;
+  color: rgba(255, 48, 2, 0.81);
+}
+
+.project-next-steps__content__list__step__row svg {
+  margin-right: -7rem;
+}
+
+.project-next-steps__content__list__step p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}

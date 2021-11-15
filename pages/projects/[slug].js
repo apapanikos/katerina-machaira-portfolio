@@ -11,6 +11,7 @@ import ProjectUsabilityStudy from "../../components/ProjectUsabilityStudy";
 import ProjectMockups from "../../components/ProjectMockups";
 import ProjectHfPrototypes from "../../components/ProjectHfPrototypes";
 import ProjectTakeaways from "../../components/ProjectTakeaways";
+import ProjectNextSteps from "../../components/ProjectNextSteps";
 
 export default function Project({ project }) {
   return (
@@ -36,6 +37,7 @@ export default function Project({ project }) {
       <ProjectMockups project = {project}/>
       <ProjectHfPrototypes project = {project}/>
       <ProjectTakeaways project = {project} />
+      <ProjectNextSteps project = {project} />
     </div>
   )
 }
