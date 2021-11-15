@@ -1,0 +1,34 @@
+.project-takeaways {
+  border: 2px solid rgba(255, 48, 2, 0.81);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 16rem;
+}
+
+.project-takeaways__content {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.project-takeaways__content h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: -.03rem;
+  margin-top: -4rem;
+  margin-bottom: 4rem;
+}
+
+.project-takeaways__content__body h5 {
+  color: #FF3002CF;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.project-takeaways__content__body p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
