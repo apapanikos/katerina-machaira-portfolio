@@ -22,6 +22,27 @@
   position: relative;
 }
 
+.left .image-container img {
+  -webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+.left .image-container img:not(:hover) {
+  filter: blur(2px) grayscale(1);
+  -webkit-filter: blur(2px) grayscale(1);
+  -moz-filter: blur(2px) grayscale(1);
+  -o-filter: blur(2px) grayscale(1);
+  -ms-filter: blur(2px) grayscale(1);
+}
+
+.left .image-container img:hover {
+  -webkit-transform: scale(1);
+	transform: scale(1);
+}
+
 .right {
   display: flex;
   flex-direction: column;

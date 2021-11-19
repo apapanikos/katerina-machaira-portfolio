@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import React from "react"
 
 function MyApp({ Component, pageProps }) {
   // Use the layout defined at the page level, if available
