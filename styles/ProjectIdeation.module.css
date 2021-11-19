@@ -33,8 +33,10 @@
 }
 
 .project-ideation__content__body__img {
+  background-color: #e8e8e8;
   position: relative;
   width: 50%;
   height: 30vw;
   margin-right: -2rem;
+  box-shadow: 0 10px 50px -5px #00000054;
 }

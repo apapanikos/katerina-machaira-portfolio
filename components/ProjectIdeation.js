@@ -16,7 +16,7 @@ const ProjectIdeation = ({ project }) => {
               src={getStrapiMedia(ideation?.content)}
               alt={ideation?.content.name}
               layout="fill"
-              objectFit="contain"
+              objectFit="cover"
               objectPosition="50% 50%"
             />
           </div>
