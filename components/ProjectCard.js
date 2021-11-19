@@ -11,13 +11,15 @@ const ProjectCard = ({ project, index }) => {
       <div className={styles.left}>
         <div className={styles['image-container']}>
           <Link href={`/projects/${project?.slug}`} key={project?.id}>
-            <Image
-              src={getStrapiMedia(project?.thumbnail)}
-              alt={project?.thumbnail.name}
-              layout="fill"
-              objectFit="cover"
-              objectPosition={getObjectPosition(index + 1)}
-            />
+            <a>
+              <Image
+                src={getStrapiMedia(project?.thumbnail)}
+                alt={project?.thumbnail?.name}
+                layout="fill"
+                objectFit="cover"
+                objectPosition={getObjectPosition(index + 1)}
+              />
+            </a>
           </Link>
         </div>
       </div>
