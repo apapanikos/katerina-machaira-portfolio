@@ -11,7 +11,7 @@ body {
   background-color: #F4F1F1;
   font-family: 'Raleway', sans-serif;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 a {

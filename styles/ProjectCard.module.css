@@ -22,6 +22,10 @@
   position: relative;
 }
 
+.left .image-container {
+  position: relative;
+}
+
 .left .image-container img {
   -webkit-transform: scale(1.5);
 	transform: scale(1.5);
