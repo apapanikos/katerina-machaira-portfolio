@@ -20,7 +20,6 @@ const ProjectIdeation = ({ project }) => {
               objectPosition="50% 50%"
             />
           </div>
-
         </div>
       </div>
     </div>

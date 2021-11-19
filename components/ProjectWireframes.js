@@ -11,7 +11,17 @@ const ProjectWireframes = ({ project }) => {
         <h1>Wireframes</h1>
         <p>{wireframes.desc}</p>
         <ul className={styles['project-wireframes__content__images']}>
-          {/* INCLUDE WIREFRAMES IMAGES */}
+          {wireframes?.images && wireframes?.images.map((img, index) => {
+            return <li key={index}>
+              <Image
+                src={getStrapiMedia(img)}
+                alt={img.name}
+                layout="fill"
+                objectFit="contain"
+                objectPosition="50% 50%"
+              />
+            </li>
+          })}
         </ul>
       </div>
     </div>
