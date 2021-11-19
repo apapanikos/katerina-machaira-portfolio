@@ -29,4 +29,12 @@
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.75rem;
+  width: 50%;
+}
+
+.project-ideation__content__body__img {
+  position: relative;
+  width: 50%;
+  height: 30vw;
+  margin-right: -2rem;
 }

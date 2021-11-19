@@ -11,8 +11,16 @@ const ProjectIdeation = ({ project }) => {
         <h1>Ideation.</h1>
         <div className={styles['project-ideation__content__body']}>
           <p>{ideation.desc}</p>
-          {/* Uncomment when image is uploaded */}
-          {/* <Image src={getStrapiMedia(ideation?.image)} alt={persona?.image.name} width={ideation?.image.width} height={ideation?.image.height}/> */}
+          <div className={styles['project-ideation__content__body__img']}>
+            <Image
+              src={getStrapiMedia(ideation?.content)}
+              alt={ideation?.content.name}
+              layout="fill"
+              objectFit="contain"
+              objectPosition="50% 50%"
+            />
+          </div>
+
         </div>
       </div>
     </div>
