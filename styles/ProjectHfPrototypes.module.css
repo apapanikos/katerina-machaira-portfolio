@@ -21,3 +21,23 @@
   margin-top: -10rem;
   margin-bottom: 4rem;
 }
+
+.project-hf-prototypes__content__images {
+  width: calc(100% - 4rem);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-hf-prototypes__content__images li {
+  width: 100%;
+  height: 40vw;
+  position: relative;
+  box-shadow: 0 10px 70px -10px #00000026;;
+}
+
+.project-lf-prototypes__content__images li:not(:last-child) {
+  margin-bottom: 3rem;
+}

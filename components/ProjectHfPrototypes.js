@@ -9,6 +9,19 @@ const ProjectHfPrototypes = ({ project }) => {
     <div className={styles['project-hf-prototypes']}>
       <div className={styles['project-hf-prototypes__content']}>
         <h1>High Fidelity Prototypes.</h1>
+        <ul className={styles['project-hf-prototypes__content__images']}>
+          {highFidelityPrototypes?.images && highFidelityPrototypes?.images.map((img, index) => {
+            return <li key={index}>
+              <Image
+                src={getStrapiMedia(img)}
+                alt={img.name}
+                layout="fill"
+                objectFit="cover"
+                objectPosition="50% 50%"
+              />
+            </li>
+          })}
+        </ul>
       </div>
     </div>
   )
