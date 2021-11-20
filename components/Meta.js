@@ -14,7 +14,7 @@ const Meta = ({ title, keywords, description }) => {
 }
 
 Meta.defaultProps = {
-  title: "Katerina Machaira - UI/UX Designeer & Content Creator",
+  title: "Katerina Machaira - UI/UX Designer & Content Creator",
   keywords: 'UI/UX, design',
   description: 'Katerina Machaira - Portfolio Web Site',
 }
