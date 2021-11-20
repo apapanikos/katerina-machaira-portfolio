@@ -30,8 +30,7 @@ Index.getLayout = function getLayout(page) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:1337/projects");
-  const projects = await res.json();
+  const projects = await fetchAPI('/projects')
 
   return {
     props: { projects },
