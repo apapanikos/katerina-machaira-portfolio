@@ -6,7 +6,8 @@ import { socialIcons } from '../utils/data'
 // TODO import pdf file
 const resume = ''
 
-const about = 'Hello my name is Katerina Machaira and I am a passionate entry level Ui/Ux designer based in Greece. Hello my name is Katerina Machaira and I am a passionate. Hello my name is Katerina Machaira and I am a passionate entry level Ui/Ux designer based in Greece.'
+const about = `Hey, my name is Katerina Machaira, and I am a passionate entry-level UI/UX designer, based in Athens, Greece. Understanding people, having empathy towards the challenges, and problem-solving are my go-to essentials in creating simple but at the same time innovative experiences for users.
+I am open to internships, part-time and full-time junior positions in the UI/UX design field.`
 
 const About = () => {
   return (
