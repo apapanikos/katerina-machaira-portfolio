@@ -8,7 +8,7 @@ const ProjectWireframes = ({ project }) => {
   return (
     <div className={styles['project-wireframes']}>
       <div className={styles['project-wireframes__content']}>
-        <h1>Wireframes</h1>
+        <h1>Wireframes.</h1>
         <p>{wireframes.desc}</p>
         <ul className={styles['project-wireframes__content__images']}>
           {wireframes?.images && wireframes?.images.map((img, index) => {

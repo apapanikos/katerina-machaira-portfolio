@@ -7,7 +7,7 @@ const ProjectUsabilityStudy = ({ project }) => {
   return (
     <div className={styles['project-usability-study']}>
       <div className={styles['project-usability-study__content']}>
-        <h1>Usability Stduy.</h1>
+        <h1>Usability Study.</h1>
         <p>{usabilityStudy.desc}</p>
         <div className={styles['project-usability-study__content__findings']}>
           <h3>{firstRoundTitle}</h3>
