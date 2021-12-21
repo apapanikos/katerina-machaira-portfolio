@@ -14,7 +14,7 @@ const Contact = () => {
             <span className={styles['contact-info__left__box__logo']}>kat.</span>
             <div className={styles['contact-info__left__box__content']}>
               <h4 className={styles['contact-info__left__box__content__title']}>Let's work together.</h4>
-              <a className={styles['contact-info__left__box__content__email']} href="mailto:aikaterinimachaira@gmail.com">aikaterinimachaira@gmail.com</a>
+              <a className={styles['contact-info__left__box__content__email']} href="mailto:aikaterinimachaira@gmail.com">aikaterinemachaira@gmail.com</a>
               <div className={styles['contact-info__left__box__content__social']}>
                 <span>Social</span>
                 <ul className={styles['contact-info__left__box__content__social__icons']}>
