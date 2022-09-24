@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../styles/ProjectResearch.module.css'
 
 const ProjectResearch = ({ project }) => {
+  console.log(project)
   const research = project?.research
   return (
     <div className={styles['project-research']}>

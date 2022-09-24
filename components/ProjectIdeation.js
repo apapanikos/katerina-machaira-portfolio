@@ -5,6 +5,7 @@ import { getStrapiMedia } from '../lib/media'
 
 const ProjectIdeation = ({ project }) => {
   const ideation = project?.ideation
+  console.log(ideation)
   return (
     <div className={styles['project-ideation']}>
       <div className={styles['project-ideation__content']}>
@@ -13,8 +14,8 @@ const ProjectIdeation = ({ project }) => {
           <p>{ideation.desc}</p>
           <div className={styles['project-ideation__content__body__img']}>
             <Image
-              src={getStrapiMedia(ideation?.content)}
-              alt={ideation?.content.name}
+              src={getStrapiMedia(ideation?.content?.data?.attributes)}
+              alt={ideation?.content?.data?.attributes?.name}
               layout="fill"
               objectFit="cover"
               objectPosition="50% 50%"

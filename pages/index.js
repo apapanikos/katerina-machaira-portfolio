@@ -1,6 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Sidebar from '../components/Sidebar'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
@@ -30,7 +27,7 @@ Index.getLayout = function getLayout(page) {
 }
 
 export async function getStaticProps() {
-  const projects = await fetchAPI('/projects')
+  const projects = await fetchAPI('/api/projects?populate=*')
 
   return {
     props: { projects },

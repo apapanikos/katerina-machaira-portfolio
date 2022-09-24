@@ -7,7 +7,7 @@ const Projects = ({ projects }) => {
     <section id="projects" className={styles.container}>
       <h1>Projects</h1>
       <ul className={styles['projects-list']}>
-        {projects && projects?.map((project, index) => <ProjectCard key={project.id} project={project} index={index}/>)}
+        {projects && projects?.data?.map((project, index) => <ProjectCard key={project.id} project={project} index={index}/>)}
       </ul>
     </section>
   )

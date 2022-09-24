@@ -11,11 +11,11 @@ const ProjectMockups = ({ project }) => {
         <h1>Mockups.</h1>
         <p>{mockups.desc}</p>
         <ul className={styles['project-mockups__content__images']}>
-          {mockups?.images && mockups?.images.map((img, index) => {
+          {mockups?.images && mockups?.images?.data.map((img, index) => {
             return <li key={index}>
               <Image
-                src={getStrapiMedia(img)}
-                alt={img.name}
+                src={getStrapiMedia(img?.attributes)}
+                alt={img?.attributes?.name}
                 layout="fill"
                 objectFit="contain"
                 objectPosition="50% 50%"

@@ -10,7 +10,7 @@ const ProjectPersona = ({ project }) => {
       <div className={styles['project-persona__content']}>
         <h1>Persona.</h1>
         <div className={styles['project-persona__content__intro']}>
-          <Image src={getStrapiMedia(persona?.avatar)} alt={persona.avatar.name} width={persona.avatar.width} height={persona.avatar.height}/>
+          <Image src={getStrapiMedia(persona?.avatar?.data?.attributes)} alt={persona?.avatar?.data?.attributes?.name} width={persona.avatar?.data?.attributes?.width} height={persona.avatar?.data?.attributes?.height}/>
           <p>{persona.desc}</p>
         </div>
         <div className = 'row mt-12'>

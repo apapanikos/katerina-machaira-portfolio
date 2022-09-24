@@ -4,17 +4,17 @@ import Image from 'next/image'
 import { getStrapiMedia } from '../lib/media'
 
 const ProjectHfPrototypes = ({ project }) => {
-  const highFidelityPrototypes = project?.high_fidelity_prototypes
+  const highFidelityPrototypes = project?.hf_prototypes
   return (
     <div className={styles['project-hf-prototypes']}>
       <div className={styles['project-hf-prototypes__content']}>
         <h1>High Fidelity Prototypes.</h1>
         <ul className={styles['project-hf-prototypes__content__images']}>
-          {highFidelityPrototypes?.images && highFidelityPrototypes?.images.map((img, index) => {
+          {highFidelityPrototypes?.images && highFidelityPrototypes?.images?.data.map((img, index) => {
             return <li key={index}>
               <Image
-                src={getStrapiMedia(img)}
-                alt={img.name}
+                src={getStrapiMedia(img?.attributes)}
+                alt={img?.attributes?.name}
                 layout="fill"
                 objectFit="cover"
                 objectPosition="50% 50%"

@@ -24,20 +24,20 @@ export default function Project({ project }) {
             </svg>
           </a>
         </Link>
-        <h1 className="text-7xl font-extrabold">{project.title}</h1>
+        <h1 className="text-7xl font-extrabold">{project?.attributes?.title}</h1>
         <div></div>
       </div>
-      <ProjectDetails project = {project} />
-      <ProjectResearch project = {project} />
-      <ProjectPersona project = {project} />
-      <ProjectIdeation project = {project} />
-      <ProjectWireframes project = {project} />
-      <ProjectLfPrototypes project = {project}/>
-      <ProjectUsabilityStudy project = {project}/>
-      <ProjectMockups project = {project}/>
-      <ProjectHfPrototypes project = {project}/>
-      <ProjectTakeaways project = {project} />
-      <ProjectNextSteps project = {project} />
+      <ProjectDetails project = {project?.attributes} />
+      <ProjectResearch project = {project?.attributes} />
+      <ProjectPersona project = {project?.attributes} />
+      <ProjectIdeation project = {project?.attributes} />
+      <ProjectWireframes project = {project?.attributes} />
+      <ProjectLfPrototypes project = {project?.attributes}/>
+      <ProjectUsabilityStudy project = {project?.attributes}/>
+      <ProjectMockups project = {project?.attributes}/>
+      <ProjectHfPrototypes project = {project?.attributes}/>
+      <ProjectTakeaways project = {project?.attributes} />
+      <ProjectNextSteps project = {project?.attributes} />
     </div>
   )
 }
@@ -52,10 +52,10 @@ Project.getLayout = function getLayout(page) {
 
 // tell next.js how many pages there are
 export async function getStaticPaths() {
-  const projects = await fetchAPI("/projects");
-  const paths = projects?.map((project) => ({
+  const projects = await fetchAPI("/api/projects?populate=*");
+  const paths = projects?.data?.map((project) => ({
     params: {
-      slug: project?.slug || ''
+      slug: project?.attributes?.slug || ''
     },
   }))
   return {
@@ -69,9 +69,9 @@ export async function getStaticProps({ params }) {
   const { slug } = params;
 
   const projects = await fetchAPI(
-    `/projects?slug=${slug}`
+    `/api/projects?populate=deep&filters[slug]=${slug}`
   );
-  const project = projects[0];
+  const project = projects?.data[0];
 
   return {
     props: { project },
