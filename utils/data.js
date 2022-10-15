@@ -15,12 +15,6 @@ export const navLinks = [
     parentClass: 'nav-item',
     class: ''
   },
-  // {
-  //   name: "Services",
-  //   path: "#services",
-  //   parentClass: 'nav-item',
-  //   class: ''
-  // },
   {
     name: "Projects",
     path: "#projects",
